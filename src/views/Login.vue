@@ -26,7 +26,7 @@
               <td >{{ tutoriales.id }}</td>
               <td >{{ tutoriales.title }}</td>
               <td >{{ tutoriales.description }}</td>
-              <td ><button class="btn mt-1">Borrar</button></td>
+              <td ><button class="btn mt-1">Borrar </button></td>
             </tr>
           </table>
           <!--<button class="btn mt-12 " @click="traerDatos()">Iniciar Sesión</button>-->
