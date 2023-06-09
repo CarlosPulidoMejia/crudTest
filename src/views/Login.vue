@@ -26,7 +26,7 @@
               <td >{{ tutoriales.id }}</td>
               <td >{{ tutoriales.title }}</td>
               <td >{{ tutoriales.description }}</td>
-              <td ><button class="btn mt-1">Borrar </button></td>
+              <td ><button class="btn mt-1" @click="borrarDato(tutoriales.id)">Borrar </button></td>
             </tr>
           </table>
           <!--<button class="btn mt-12 " @click="traerDatos()">Iniciar Sesión</button>-->
@@ -58,7 +58,20 @@ export default {
         console.log(datos.value.length );
       })
     }
-    return { traerDatos, datos} //Regreasamos las const y las funciones que utilizamos en la vista
+
+    function borrarDato(id){
+      axios.delete(`${API}/tutorials/${id}`)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) =>{
+        console.log(error);
+      } )
+      console.log(id);
+      datos.value = []
+      traerDatos()
+    }
+    return { traerDatos, borrarDato, datos} //Regreasamos las const y las funciones que utilizamos en la vista
   }
 };
 </script>
