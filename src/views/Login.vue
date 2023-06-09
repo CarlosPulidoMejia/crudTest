@@ -68,8 +68,6 @@ export default {
         console.log(error);
       } )
       console.log(id);
-      datos.value = []
-      traerDatos()
     }
     return { traerDatos, borrarDato, datos} //Regreasamos las const y las funciones que utilizamos en la vista
   }
