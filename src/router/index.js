@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import axios from "axios";
-import Crud from "@/views/Login.vue";
+import Crud from "@/views/Crud.vue";
 
 const routes = [{
     path: "/",
