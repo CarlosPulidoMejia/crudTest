@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 //import axios from "axios";
-import Login from "@/views/Login.vue";
+import Crud from "@/views/Login.vue";
 import Menu from "@/views/Menu.vue";
 import RegistroDeInformacionDeTelepeaje from "@/views/Modules/RegistroInformacion.vue";
 import MantenimientoTag from "@/views/Modules/MantenimientoTag.vue";
@@ -19,8 +19,8 @@ import ActividadUsuarios from '@/views/Modules/ActividadUsuario.vue'
 
 const routes = [{
     path: "/",
-    name: "Login",
-    component: Login,
+    name: "Crud",
+    component: Crud,
     meta: {
       requiresCookie: false
     },
