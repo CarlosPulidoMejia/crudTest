@@ -8,6 +8,9 @@
         <div class="flex-initial mt-10 mb-4 w-full">
           <button class="rounded-lg w-32 botonIconOk" @click="traerDatos()">Agregar</button>
         </div>
+        <div class="flex-initial mt-10 mb-4 w-full">
+          Archivo para subida: <input type="file" name="myfiles" multiple>
+        </div>
       </div>
     </div>
     <div>
